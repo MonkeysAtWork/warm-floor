@@ -1,0 +1,55 @@
+{
+  "name": "warm-floor",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "jest --colors",
+    "build": "NODE_ENV=production npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonkeysAtWork/warm-floor.git"
+  },
+  "author": "Sergey Shikhovtsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonkeysAtWork/warm-floor/issues"
+  },
+  "homepage": "https://github.com/MonkeysAtWork/warm-floor.git",
+  "jest": {
+    "verbose": true,
+    "testURL": "//localhost"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
+    "cssnano": "^4.1.10",
+    "debug": "^4.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "html-minifier-webpack-plugin": "^2.2.3",
+    "html-webpack-plugin": "^4.0.4",
+    "jest": "^25.2.7",
+    "jest-cli": "^25.2.7",
+    "js-beautify": "^1.11.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "nock": "^12.0.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
