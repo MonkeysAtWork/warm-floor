@@ -2,8 +2,7 @@
   "name": "warm-floor",
   "version": "0.0.1",
   "scripts": {
-    "test": "jest --colors",
-    "build": "NODE_ENV=production npx webpack"
+    "test": "jest --colors"
   },
   "repository": {
     "type": "git",
@@ -31,6 +30,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.2",
     "cssnano": "^4.1.10",
     "debug": "^4.1.1",

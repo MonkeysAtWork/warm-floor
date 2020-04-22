@@ -7,16 +7,10 @@ develop:
 dev:
 	rm -rf dist
 	npx webpack
-	cp -r src/icons dist
-	cp src/manifest.json dist
-	cp src/sw.js dist
 
 build:
 	rm -rf dist
-	npm run build
-	cp -r src/icons dist
-	cp src/manifest.json dist
-	cp src/sw.js dist
+	NODE_ENV=production npx webpack
 
 test:
 	npm test
