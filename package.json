@@ -2,7 +2,8 @@
   "name": "warm-floor",
   "version": "0.0.1",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./server/server_prod.js"
   },
   "repository": {
     "type": "git",
