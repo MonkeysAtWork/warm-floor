@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "name": "Warm-floor",
+  "description": "Warm-floor controller app",
+  "icons": {
+    "60": "/icons/firefox_app_60x60.png",
+    "128": "/icons/firefox_app_128x128.png",
+    "512": "/icons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Sergey Shikhovtsov",
+    "url": null
+  }
+}
