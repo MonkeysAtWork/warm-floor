@@ -6,7 +6,7 @@ const server = require('./ws');
 
 
 const DIST_DIR = path.join(__dirname, '../dist');
-const externalPort = 443;
+const externalPort = process.env.PORT || 443;
 const internalPort = 8082;
 const httpsOptions = {
   cert: fs.readFileSync(path.join(__dirname, '/certs/localhost.crt')),
