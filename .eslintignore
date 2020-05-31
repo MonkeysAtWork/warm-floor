@@ -1,3 +1,4 @@
 node_modules
 dist
-src/sw.js
+src/app/sw.js
+src/esp8622/esp.js

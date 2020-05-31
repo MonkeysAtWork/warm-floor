@@ -2,15 +2,18 @@ install:
 	npm ci
 
 develop:
-	npx webpack-dev-server --open
+	node ./server/server_dev.js development
+
+start:
+	node ./server/server_prod.js
 
 dev:
 	rm -rf dist
-	npx webpack
+	npx webpack --config webpack.dev.config.js
 
 build:
 	rm -rf dist
-	NODE_ENV=production npx webpack
+	npx webpack --config webpack.prod.config.js
 
 test:
 	npm test

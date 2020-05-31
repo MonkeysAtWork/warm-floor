@@ -1,6 +1,8 @@
 /node_modules/
 *.log
 dist
-assets
-.now*
-.now
+/other/
+/.vscode/
+/__tests__/
+/.github/
+.nowignore
