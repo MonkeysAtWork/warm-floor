@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 // const https = require('https');
 const http = require('http');
-const basicAuth = require('express-basic-auth');
+// const basicAuth = require('express-basic-auth');
 const server = require('./ws');
 
 
@@ -18,11 +18,11 @@ const internalPort = 8083;
 const app = express();
 app.disable('x-powered-by');
 
-const auth = basicAuth({
-  users: { admin: 'admin' },
-  challenge: true,
-  realm: 'Imb4T3st4pp',
-});
+// const auth = basicAuth({
+//   users: { admin: 'admin' },
+//   challenge: true,
+//   realm: 'Imb4T3st4pp',
+// });
 
 
 app.use((req, res, next) => {
@@ -30,7 +30,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(auth, express.static(DIST_DIR));
+app.use(express.static(DIST_DIR));
 
 
 const httpServer = http.createServer(app);
