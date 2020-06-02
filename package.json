@@ -26,6 +26,7 @@
     "express-sslify": "^1.2.0",
     "lodash": "^4.17.15",
     "melanke-watchjs": "^1.5.2",
+    "ssl-express-www": "^3.0.7",
     "ws": "^7.3.0"
   },
   "devDependencies": {
