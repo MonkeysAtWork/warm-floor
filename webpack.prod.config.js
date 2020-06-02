@@ -72,7 +72,7 @@ module.exports = {
         appDescription: 'Warm-floor controller app',
         background: '#ffffff',
         theme_color: '#ffffff',
-        display: 'minimal-ui',
+        display: 'standalone',
         icons: {
           android: true,
           appleIcon: true,

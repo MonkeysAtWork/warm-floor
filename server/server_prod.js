@@ -4,6 +4,7 @@ const express = require('express');
 // const https = require('https');
 const http = require('http');
 // const basicAuth = require('express-basic-auth');
+const enforce = require('express-sslify');
 const server = require('./ws');
 
 
@@ -17,6 +18,8 @@ const internalPort = 8083;
 
 const app = express();
 app.disable('x-powered-by');
+
+app.use(enforce.HTTPS());
 
 // const auth = basicAuth({
 //   users: { admin: 'admin' },

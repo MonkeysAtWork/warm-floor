@@ -23,6 +23,7 @@
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0",
+    "express-sslify": "^1.2.0",
     "lodash": "^4.17.15",
     "melanke-watchjs": "^1.5.2",
     "ws": "^7.3.0"
