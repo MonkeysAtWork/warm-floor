@@ -8,7 +8,7 @@ const SSID = 'Metro-107';
 const wifiPassword = { password: '02088475' };
 let connectionTry = 0;
 
-const server = 'warm-floor.herokuapp.com';
+const server = 'ws://warm-floor.herokuapp.com/controller';
 // const serverPort = 8082;
 
 const updateTimeOut = 30000;

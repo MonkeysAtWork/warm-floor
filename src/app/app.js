@@ -1,7 +1,7 @@
 import { watch } from 'melanke-watchjs';
 
 
-const ws = new WebSocket(`wss://${location.host}`, 'protocolOne'); // eslint-disable-line no-restricted-globals
+const ws = new WebSocket(`wss://${location.host}/client`, 'protocolOne'); // eslint-disable-line no-restricted-globals
 
 const state = {
   connection: 'disconnected',

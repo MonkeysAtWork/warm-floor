@@ -7,3 +7,5 @@
 /__tests__/
 /.github/
 .nowignore
+/server/server_dev.js
+/server/ws_old.js
