@@ -2,7 +2,7 @@ install:
 	npm ci
 
 develop:
-	node ./server/server_dev.js
+	nodemon --watch server ./server/server_dev.js
 
 start:
 	node ./server/server_prod.js

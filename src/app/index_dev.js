@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import './app';
+import run from './app';
 
+run();
 console.log('Welcome to Expack!');
 // Needed for Hot Module Replacement
 if (module.hot) {

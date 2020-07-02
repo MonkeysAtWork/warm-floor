@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'template.html',
-      favicon: './src/app/icons/icon.png',
+      favicon: './src/icons/icon.png',
       meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
     }),
     new MiniCssExtractPlugin(),

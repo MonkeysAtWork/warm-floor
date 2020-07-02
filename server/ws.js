@@ -34,13 +34,13 @@ module.exports = (httpServer) => {
   httpServer.on('upgrade', (request, socket, head) => {
     const { pathname } = url.parse(request.url);
 
-    if (pathname === '/controller') {
-      innerWss.handleUpgrade(request, socket, head, (ws) => {
-        innerWss.emit('connection', ws, request);
-      });
-    } else if (pathname === '/client') {
+    if (pathname === '/client') {
       extWss.handleUpgrade(request, socket, head, (ws) => {
         extWss.emit('connection', ws, request);
+      });
+    } else if (pathname === '/controller') {
+      innerWss.handleUpgrade(request, socket, head, (ws) => {
+        innerWss.emit('connection', ws, request);
       });
     } else {
       socket.destroy();

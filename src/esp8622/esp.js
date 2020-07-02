@@ -8,8 +8,11 @@ const SSID = 'Metro-107';
 const wifiPassword = { password: '02088475' };
 let connectionTry = 0;
 
-const server = 'ws://warm-floor.herokuapp.com/controller';
-// const serverPort = 8082;
+const server = 'warm-floor.herokuapp.com';
+const options = {
+  path: '/controller',
+  // port: 8080,
+};
 
 const updateTimeOut = 30000;
 
@@ -59,7 +62,7 @@ function handleRequiredState(required) {
 
 function startWsConnection() {
   console.log(`ws connecting to ${server}...`);
-  const ws = new WebSocket(server);
+  const ws = new WebSocket(server, options);
 
   ws.on('open', () => {
     console.log('Connected to server!');

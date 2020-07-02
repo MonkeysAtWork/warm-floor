@@ -1,3 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './sw-loader';
-import './app';
+import run from './app';
+
+run();
